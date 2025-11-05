@@ -1,5 +1,9 @@
 
-.input {
+body {
+  text-align: center;
+}
+
+.input-area {
   display: center;
   justify-content: center;
 }
