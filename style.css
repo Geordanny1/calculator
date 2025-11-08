@@ -1,6 +1,7 @@
 
 body {
   text-align: center;
+  background-color: antiquewhite;
 }
 
 .input-area {
@@ -12,6 +13,16 @@ input {
   width: 40rem;
   height: 5rem;
   font-size: 4rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.svg-button {
+  background-color: transparent;
+  border: none;
+  width: fit-content;
 }
 
 input::-webkit-outer-spin-button,
@@ -31,17 +42,12 @@ button {
   text-align: center;
 }
 
-
-div {
-  display: flex;
-  justify-content: center;
-}
 ul {
   padding: 0;
   list-style-type: none;
   display: grid;
   background-color: grey;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   justify-content: center;
   width: 50%;
   border: 6px solid black;
@@ -49,22 +55,60 @@ ul {
   padding: 1rem;
   gap: 1rem;
 }
+.buttons {
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
 
 li {
   display: flex;
   justify-content: center;
 }
 
-
-/* minux sign */
-li:nth-child(10) {
-  grid-column: 4 / -1;
-  grid-row: 1 / 2;
+li:nth-child(1) {
+  grid-column:1 / 2;
+  grid-row: 3 / 4;
 }
 
-/* plus sign */
-li:nth-child(11){
-  grid-column: 4 / -1;
+li:nth-child(2) {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+li:nth-child(3) {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
+
+li:nth-child(4) {
   grid-row: 2 / 3;
 }
 
+li:nth-child(5) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+li:nth-child(6) {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+li:nth-child(10) {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+
+li:nth-child(12) {
+  grid-column: 5 / 6;
+}
+
+li:last-child {
+  grid-column: 4 / 3;
+}
+
+li:nth-child(14) {
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+}

@@ -7,16 +7,12 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    <h1>A calculator</h1>
-    
+    <h1>A giga mega modern quantum computing calculator <span>plus<span></h1>
     <div class="input">
-      <input id="input" type="number">
+      <input id="input" type="number" value="0">
     </div>
 
-    <div>
-
-      <ul>
-        <li><button class="number">0</button></li>
+    <ul class="buttons">
         <li><button class="number">1</button></li>
         <li><button class="number">2</button></li>
         <li><button class="number">3</button></li>
@@ -26,12 +22,18 @@
         <li><button class="number">7</button></li>
         <li><button class="number">8</button></li>
         <li><button class="number">9</button></li>
-        <li><button>Delete</button></li>
-        <li><button>-</button></li>
-        <li><button>+</button></li>
-        <li><button>x</button></li>
-        <li><button>%</button></li>
-        <li><button>=</button></li>
+        <li><button class="number">0</button></li>
+    </ul>
+    <button id="delete-button"class="svg-button">
+              <svg xmlns="http://www.w3.org/2000/svg" height="80px" viewBox="0 -960 960 960" width="100px" fill="#e3e3e3" role="img"><path d="m456-320 104-104 104 104 56-56-104-104 104-104-56-56-104 104-104-104-56 56 104 104-104 104 56 56Zm-96 160q-19 0-36-8.5T296-192L80-480l216-288q11-15 28-23.5t36-8.5h440q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H360ZM180-480l180 240h440v-480H360L180-480Zm400 0Z"/></svg>
+    </button>
+        </li>
+        <li><button id="delete-all-button">C</button></li>
+        <li><button id="minus-button">-</button></li>
+        <li><button id="plus-button">+</button></li>
+        <li><button id="multiplication-button">x</button></li>
+        <li><button id="division-button">÷</button></li>
+        <li><button id="equals-button">=</button></li>
       </ul>
 
     </div>
